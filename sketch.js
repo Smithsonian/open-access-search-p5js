@@ -84,8 +84,6 @@ function getData() {
     url = api_UrlBase + api_endpt_search;
   };
 
-  console.log("url: " + url);
-  
   // Build loadJSON url
   url = url
   +api_param_api_key
