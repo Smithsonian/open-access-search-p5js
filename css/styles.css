@@ -1,0 +1,202 @@
+
+
+body {
+    background: #101820;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    color: #41505c;
+    line-height: 1.5;
+}
+
+body {
+    width: 98%
+}
+
+h1, .alpha, h2.alpha, .h1 {
+    line-height: 1.08;
+    font-weight: 600;
+    color: #101820;
+    margin: 0;
+    padding: 1rem;
+    font-family: "minion-pro",Georgia,Times,"Times New Roman",serif
+    font-size: 2.5rem;
+    display:flex;
+
+}
+
+/* Header */
+
+.header_preface {
+    background: #101820;
+
+    padding: 0.3rem 0; 
+}
+
+.header_preface > .container {
+    align-items: center;
+    width: 98%;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 1.5rem;
+}
+
+.l-branding {
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+}
+
+l-branding h1, .l-branding h1 a {
+    line-height: 0;
+}
+
+a {
+    color: #016F9D;
+    text-decoration: none;
+}
+
+a {
+    background: transparent;
+}
+
+.l-header {
+    position: relative;
+    background: #333F48;
+}
+
+.l-header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.l-header-inner {
+    position: relative;
+    z-index: 999;
+}
+
+@media (min-width: 1480px)
+    .l-container, .layout-constrain > .content, .layout-constrain .group-header .content, .page-user .l-content-wrapper {
+        width: 100%;
+    }
+
+    .l-container, .layout-constrain:not(.paragraphs-item-grid-layout) > .content, .layout-constrain .group-header .content, .layout-constrain .title, .page-user .l-content-wrapper {
+        *zoom: 1;
+    }
+
+    .l-container, .layout-constrain > .content, .layout-constrain .group-header .content, .layout-constrain .title, .page-user .l-content-wrapper {
+        width: 96%;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+        display: block;
+    }
+
+    .sr-only, .element-invisible, .lines-button .text, button.btn-svg .label, .ui-datepicker .ui-datepicker-header .ui-icon, footer .l-region--footer .pane-menu-menu-social-media .menu-title, .l-branding .site-name a span, .wrapper--preface-buttons .link-wrapper ul.links span, .flex-pauseplay a span, .flex-direction-nav a span, .l-navigation .sf-accordion-toggle a span, .l-region--header .sf-accordion-toggle a span, .block--menu-menu-social-media .menu-title, .block--edan-searchtab .block__title, .ctools-auto-submit-full-form button.btn-svg .label, .views-newsdesk-search form button.btn-svg .label, .views-exposed-form-newdesk-search-search-form button.btn-svg .label, .edan-search-form button.btn-svg .label, .search-form button.btn-svg .label, .si-ossearch-search-form button.btn-svg .label {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+
+    }
+
+/* Content */
+#controls {
+    background: white;
+    color: black;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#controls > p {
+    padding: .5rem 1rem 1rem 1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+#collections {
+    background-color: white;
+}
+
+#collections-records {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.collections-record {
+    display: flex;
+    padding: 1rem;
+}
+
+.collection-card {
+    background-color: #f4f0eb70;
+    border-radius: 0.25rem;
+}
+
+.object-title {
+    font-size: 1.15rem;
+    padding: 0 0.35rem;
+    margin: .15rem  ;
+    background: #131d22;
+    color: #f4f0eb70;
+}
+
+.object-title > a {
+    color:white;
+}
+
+.object-source {
+    color:white;
+    font-size: 1rem;
+    }
+
+.object-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.object-image {
+    padding: 0 0.15rem;
+}
+
+/* Footer */
+
+footer {
+    background: #101820;
+}
+
+footer > menu > ul {
+    font-size: 17px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > menu > ul > li {
+    margin: 0 auto 0 0;
+}
+
+footer > menu > ul > li > a {
+    color: white;
+}
+
+footer > menu > ul > li > a:hover {
+    color: #ffcd00;
+}

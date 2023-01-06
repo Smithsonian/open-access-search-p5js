@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<link type="text/css" rel="stylesheet" href="css/styles.css" media="all">
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+	<!-- <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> -->
+	<script src="sketch.js"></script>
+</head>
+
+<body>
+	<header class="l-header " role="banner">
+		<div class="header_preface">
+	  		<div class="container">
+		        <div class="wrapper-logo">
+		        	<a href="https://si.edu" target="_blank">
+		        		<img alt="Smithsonian" src="assets/si-logo-white.svg" width="138">
+		        		<span class="sr-only">visit main website (link is external)</span>
+		        	</a>
+				</div>
+    		</div>
+    	</div>
+	</header>
+	
+
+		<div id="controls">
+	
+			<h1>Open Access Search</h1>
+			<p>
+			Using P5js, this application provides a way to search through a small subset of the Smithsonian Institution collections marked as <a href="https://www.si.edu/openaccess" target="_blank"><i>Open Access</i></a>.  Open Access items carry what’s called a CC0 designation. This means the Smithsonian dedicates the digital asset into the public domain, meaning it is free of copyright restrictions and you can use it for any purpose, free of charge, without further permission from the Smithsonian.  To search through more Smithsonian Collections, beyond the Open Access records, please visit the <a href="http://www.si.edu/collections/" target="_blank">SI.edu Collections Search</a> page.</p>
+			<p>A prerequsite to using this application to search through the Open Access records is to obtain an API key from the <a href="https://api.data.gov/docs/si/" target="_blank">Data.gov</a>.<br>
+			<label for="apiKey">Your Data.gov API Key:</label>
+			<input type="text" size="50" name="apiKey" id="apiKey" value="">
+			<p>
+			<label for="searchRequest">Search for word or phase:</label>
+			<input type="text" name="searchRequest" id="searchRequest" value="">
+			
+			<select name="searchSort" id="searchSort">
+				<option value="relevancy">Relevancy</option>
+				<option value="newest">Newest</option>
+				<option value="updated">Last Updated</option>
+				<option value="random">Random</option>
+			</select>
+
+			<select name="searchByCategory" id="searchByCategory">
+				<option value="">None</option>
+				<option value="art_design">Art & Design</option>
+				<option value="history_culture">History & Culture</option>
+				<option value="science_technology">Science & Technology</option>
+			</select>
+
+			<button id="searchRequestButton">Search</button>
+<!-- 			<input type="checkbox" name="useML5" id="useML5">
+			<label for="useML5">Use ml5 object detection?</label> -->
+			</p>
+		</div>
+
+		<content>
+			<main>	
+				<div id="collections">
+					<ul id="collections-records"> 
+						<!-- The Smithsonian Instituion has many different collections. -->
+						</ul>
+					</div>
+				</div>	
+		</main>
+	</content>
+
+	<footer>
+		<menu>
+			<ul>
+				<li><a href="https://www.si.edu/">Smithsonian</a></li>
+				<li><a href="https://www.si.edu/termsofuse">Terms of Use</a></li>
+				<li><a href="https://www.si.edu/privacy">Privacy</a></li>
+				<li><a href="https://api.data.gov/signup/" target="_blank">Get a Data.gov API key</a></li>
+			</ul>
+		</menu>
+	</footer>
+
+</body>
+</html>
